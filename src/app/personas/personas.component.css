@@ -1,3 +1,13 @@
-h1{
-    color: aqua;
+.card-persona .card-header{
+    background: #2FCD71;
+    color: #FFFFFF;
+}
+
+.repetidor .card-title{
+    color: #E64B3C;
+}
+
+.card-calculadora .card-header{
+    background: #BB2144;
+    color: #FFFFFF;
 }

@@ -1,15 +1,79 @@
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <h1>Lista de Personas</h1>
-      <button class="btn btn-primary" [disabled]="deshabilitar" (click)="agregarPersona()">Agregar Persona</button>
-      <p>{{mensaje}}</p>
-      <app-persona></app-persona>
 
-      <label class="form-label">Titulo Persona</label>
-      <input type="text" class="form-control" 
-        [(ngModel)]="titulo">
-        {{titulo}}
-    </div>
+<main class="container">
+
+  <div class="row justify-content-center mb-3">
+
+    <section class="card card-persona fs-5 shadow-sm col-lg-5 p-0">
+      <div class="card-header h3">
+        Datos de Usuario
+      </div>
+      <ul class="list-group list-group-flush">
+        <app-persona></app-persona> 
+        <li class="list-group-item"><span class="fw-semibold">Profesión: </span>{{titulo}}</li>
+      </ul>
+    </section>
+
+    <section class="col-lg-5 mx-2 repetidor">
+
+      <article class="card shadow-sm">
+        <div class="card-body p-2" (keyup)="0">
+          <h5 class="card-title mb-1">Repetidor de Palabras</h5>
+          <input class="form-control mb-1" #entrada />
+          <p class="card-text ps-2 fw-semibold">
+            {{ entrada.value }}
+          </p>
+        </div>
+      </article>
+
+      <article class="card shadow-sm mt-3">
+        <div class="card-body p-2">
+          <h5 class="card-title">¿A qué te dedicas?</h5>
+          <input type="text" class="form-control" 
+          [(ngModel)]="titulo">
+        </div>
+      </article>
+
+      <article class="pt-3">
+        <button class="btn btn-sm btn-danger fw-semibold shadow-sm" [disabled]="deshabilitar" (click)="mostrarMensaje()">Mensaje</button>
+        <span class="ps-2 fw-semibold">{{mensaje}}</span>
+      </article>
+
+    </section>
+
   </div>
-</div>
+
+  <div class="row justify-content-center mt-4">
+
+    <section class="col-lg-10 card card-calculadora shadow-sm p-0 rounded-3">
+
+      <h3 class="card-header rounded-top-3">
+        Calculadora con Angular
+      </h3>
+
+      <div class="card-body rounded-3">
+
+        <div class="row">
+
+          <div class=" col-md-6 mb-3">
+            <label for="valorA" class="form-label fs-5 fw-semibold">Valor A:</label>
+            <input type="number" class="form-control shadow-sm" id="valorA" placeholder="Ingrese un valor númerico" required>
+          </div>
+
+          <div class=" col-md-6 mb-3">
+            <label for="valorB" class="form-label fs-5 fw-semibold">Valor B</label>
+            <input type="number" class="form-control shadow-sm" id="valorB" placeholder="Ingrese un valor númerico" required>
+          </div>
+
+          <div>
+            <button class="btn btn-primary" (click)="calcularSuma()">Sumar</button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+</main>

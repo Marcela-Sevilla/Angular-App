@@ -8,8 +8,9 @@ import { Component } from '@angular/core';
 export class PersonaComponent {
   
   nombre: string = 'Marcela';
-  apellido: string = 'Sevilla';
+  apellido: string = 'Sevilla Lopez';
   private edad: number = 18;
+  ciudad: string = 'Barranquilla';
 
   // Funciones en Angular
   getEdad():number{

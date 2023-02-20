@@ -1,11 +1,4 @@
-<p>
-    <span>Nombre:</span>{{nombre}}
-    <span>Apellidos:</span>{{apellido}}
-    <span>Edad:</span>{{getEdad}}
-</p>
 
-<div (keyup)="0">
-    <label class="form-label">Repetidor</label>
-    <input class="form-control" #entrada />
-    {{ entrada.value }}
-</div>
+<li class="list-group-item"><span class="fw-semibold">Nombre: </span>{{nombre}}</li>
+<li class="list-group-item"><span class="fw-semibold">Apellidos: </span>{{apellido}}</li>
+<li class="list-group-item"><span class="fw-semibold">Edad: </span>{{getEdad()}}</li>

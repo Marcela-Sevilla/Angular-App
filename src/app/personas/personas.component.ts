@@ -8,11 +8,15 @@ import { Component } from "@angular/core";
 export class PersonasComponent{
 
     deshabilitar = false;
-    mensaje = 'No se ha gregado ninguna persona';
+    mensaje = 'Da click para ver el mensaje!';
     titulo = 'Ingeniero';
 
-    agregarPersona(){
-        this.mensaje = 'Persona Agregada';
+    mostrarMensaje(){
+        this.mensaje = 'Bienvenido a mi primera App en Angular.';
+    }
+
+    calcularSuma(){
+        
     }
 
 
