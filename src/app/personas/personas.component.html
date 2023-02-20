@@ -56,16 +56,17 @@
 
           <div class=" col-md-6 mb-3">
             <label for="valorA" class="form-label fs-5 fw-semibold">Valor A:</label>
-            <input type="number" class="form-control shadow-sm" id="valorA" placeholder="Ingrese un valor númerico" required>
+            <input [(ngModel)]="valorA" type="number" class="form-control shadow-sm" id="valorA" placeholder="Ingrese un valor númerico" required>
           </div>
 
           <div class=" col-md-6 mb-3">
             <label for="valorB" class="form-label fs-5 fw-semibold">Valor B</label>
-            <input type="number" class="form-control shadow-sm" id="valorB" placeholder="Ingrese un valor númerico" required>
+            <input [(ngModel)]="valorB" type="number" class="form-control shadow-sm" id="valorB" placeholder="Ingrese un valor númerico" required>
           </div>
 
           <div>
-            <button class="btn btn-primary" (click)="calcularSuma()">Sumar</button>
+            <button class="btn btn-primary fw-semibold" (click)="calcularSuma()">Sumar</button>
+            <p class="fs-5 m-0"><span class="fw-semibold">Resultado: </span>{{total}}</p>
           </div>
 
         </div>
