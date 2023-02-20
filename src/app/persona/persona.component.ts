@@ -11,6 +11,7 @@ export class PersonaComponent {
   apellido: string = 'Sevilla';
   private edad: number = 18;
 
+  // Funciones en Angular
   getEdad():number{
     return this.edad
   }
