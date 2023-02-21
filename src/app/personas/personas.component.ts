@@ -8,7 +8,7 @@ import { Component } from "@angular/core";
 export class PersonasComponent{
 
     deshabilitar: boolean = false;
-    mensaje: string = 'Da click para ver el mensaje!';
+    mensaje: string = '';
     titulo: string = 'Ingeniera';
     total: number = 0;
     valorA: number = 0;

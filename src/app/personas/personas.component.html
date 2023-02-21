@@ -35,7 +35,10 @@
 
       <article class="pt-3">
         <button class="btn btn-sm btn-danger fw-semibold shadow-sm" [disabled]="deshabilitar" (click)="mostrarMensaje()">Mensaje</button>
-        <span class="ps-2 fw-semibold" *ngIf="mostrar">{{mensaje}}</span>
+        <span class="ps-2 fw-semibold" *ngIf="mostrar else sinMensaje">{{mensaje}}</span>
+        <ng-template #sinMensaje>
+          <span class="ps-2 fw-semibold">Da click para ver el mensaje!</span>
+        </ng-template>
       </article>
 
     </section>
