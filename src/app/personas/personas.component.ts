@@ -13,8 +13,10 @@ export class PersonasComponent{
     total: number = 0;
     valorA: number = 0;
     valorB: number = 0;
+    mostrar: boolean = false;
 
     mostrarMensaje(){
+        this.mostrar = true;
         this.mensaje = 'Bienvenido a mi primera App en Angular.';
     }
 

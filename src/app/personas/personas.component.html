@@ -35,7 +35,7 @@
 
       <article class="pt-3">
         <button class="btn btn-sm btn-danger fw-semibold shadow-sm" [disabled]="deshabilitar" (click)="mostrarMensaje()">Mensaje</button>
-        <span class="ps-2 fw-semibold">{{mensaje}}</span>
+        <span class="ps-2 fw-semibold" *ngIf="mostrar">{{mensaje}}</span>
       </article>
 
     </section>
