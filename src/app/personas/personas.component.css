@@ -11,3 +11,11 @@
     background: #BB2144;
     color: #FFFFFF;
 }
+
+.section-lista-persona .card-title{
+    color: #082D59;
+}
+.section-lista-persona .card-header{
+    background: #DCC551;
+    color: #FFFFFF;
+}
