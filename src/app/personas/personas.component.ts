@@ -18,11 +18,10 @@ export class PersonasComponent{
     mostrarMensaje(){
         this.mostrar = true;
         this.mensaje = 'Bienvenido a mi primera App en Angular.';
-    }
+    };
 
     calcularSuma():void{
         this.total = this.valorA + this.valorB;
     }
-
 
 }
