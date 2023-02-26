@@ -57,18 +57,9 @@
 
         <div class="row">
 
-          <div class=" col-md-6 mb-3">
-            <label for="valorA" class="form-label fs-5 fw-semibold">Valor A:</label>
-            <input [(ngModel)]="valorA" type="number" class="form-control shadow-sm" id="valorA" placeholder="Ingrese un valor númerico" required>
-          </div>
-
-          <div class=" col-md-6 mb-3">
-            <label for="valorB" class="form-label fs-5 fw-semibold">Valor B</label>
-            <input [(ngModel)]="valorB" type="number" class="form-control shadow-sm" id="valorB" placeholder="Ingrese un valor númerico" required>
-          </div>
+          <app-calculadora (valorTotal)="sumaTotal($event)"></app-calculadora>
 
           <div>
-            <button type="submit" class="btn btn-primary fw-semibold" (click)="calcularSuma()">Sumar</button>
             <app-resultado [total]="total"></app-resultado>
           </div>
 

@@ -10,18 +10,16 @@ export class PersonasComponent{
     deshabilitar: boolean = false;
     mensaje: string = '';
     titulo: string = 'Ingeniera';
-    total: number = 0;
-    valorA: number = 0;
-    valorB: number = 0;
     mostrar: boolean = false;
+    total: number =0;
 
     mostrarMensaje(){
         this.mostrar = true;
         this.mensaje = 'Bienvenido a mi primera App en Angular.';
     };
 
-    calcularSuma():void{
-        this.total = this.valorA + this.valorB;
+    sumaTotal(totalSuma:number){
+        this.total = totalSuma;
     }
 
 }
