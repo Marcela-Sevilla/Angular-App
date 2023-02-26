@@ -8,8 +8,8 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class CalculadoraComponent {
   @Output() valorTotal = new EventEmitter<number>();
 
-  valorA: number = 0;
-  valorB: number = 0;
+  valorA: number;
+  valorB: number;
 
   calcularSuma(){
     let total = this.valorA + this.valorB;

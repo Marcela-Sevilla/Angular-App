@@ -8,10 +8,10 @@ import { Component } from "@angular/core";
 export class PersonasComponent{
 
     deshabilitar: boolean = false;
-    mensaje: string = '';
+    mensaje: string;
     titulo: string = 'Ingeniera';
     mostrar: boolean = false;
-    total: number =0;
+    total: number;
 
     mostrarMensaje(){
         this.mostrar = true;
