@@ -69,7 +69,7 @@
 
           <div>
             <button type="submit" class="btn btn-primary fw-semibold" (click)="calcularSuma()">Sumar</button>
-            <span class="fs-5 ms-3"><span class="fw-semibold">Resultado: </span>{{total}}</span>
+            <app-resultado [total]="total"></app-resultado>
           </div>
 
         </div>
