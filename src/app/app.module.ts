@@ -6,10 +6,11 @@ import { PersonasComponent } from './personas/personas.component';
 import { PersonaComponent } from './persona/persona.component';
 import { FormsModule } from '@angular/forms';
 import { ResultadoComponent } from './resultado/resultado.component';
+import { CalculadoraComponent } from './calculadora/calculadora.component';
 
 @NgModule({
   declarations: [
-    AppComponent, PersonasComponent, PersonaComponent, ResultadoComponent
+    AppComponent, PersonasComponent, PersonaComponent, ResultadoComponent, CalculadoraComponent
   ],
   imports: [
     BrowserModule,
